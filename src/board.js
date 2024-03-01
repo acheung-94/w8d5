@@ -10,6 +10,17 @@ if (typeof window === 'undefined'){
  * and two white pieces at [3, 3] and [4, 4].
  */
 function _makeGrid() {
+  let newArray = new Array(8)
+  for(i=0; i < newArray.length ; i++){
+    console.log(newArray[i])
+    newArray[i] = new Array(8)
+  }
+  //console.log(newArray);
+  newArray[3][3] = new Piece("white")
+  newArray[3][4] = new Piece("black")
+  newArray[4][3] = new Piece("black")
+  newArray[4][4] = new Piece("white")
+  return newArray
 }
 
 /**
